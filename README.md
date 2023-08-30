@@ -1,7 +1,7 @@
 # AngularDrunkenBeer
 
 #### Note:
-This project was created to play around angular material. It's nowhere to be perfect
+This project was created to play around angular material.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
