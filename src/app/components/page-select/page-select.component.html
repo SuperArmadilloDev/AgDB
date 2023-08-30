@@ -1,0 +1,15 @@
+<div class="page-selector">
+    <button mat-mini-fab color="primary" (click)="decrement()" [disabled]="page <= 1">
+        <mat-icon>
+            chevron_left
+        </mat-icon>
+    </button>
+    
+    <input matInput type="number"  [value]="page" (change)="changePage($event)"/>
+    
+    <button mat-mini-fab color="primary" (click)="increment()" [disabled]="(beers$ | async)?.length === 0">
+        <mat-icon>
+            chevron_right
+        </mat-icon>
+    </button>
+</div>
