@@ -1,0 +1,33 @@
+
+mat-card{
+    height: var(--spacing-12);
+    mat-card-title {
+        max-height: var(--spacing-7); 
+        overflow-y: scroll;
+    }
+
+    
+    mat-card-subtitle {
+        max-height: var(--spacing-6);
+        overflow-y: scroll;
+    }
+    
+    mat-card-content{
+        padding-top: var(--spacing-3) ;
+        p{
+            line-height: var(--spacing-4);
+            max-height: var(--card-text-height);
+            overflow-y: auto;
+        }
+    }
+    
+    .card-image {
+        height: inherit;
+        &-container{
+            max-height: var(--spacing-9);
+            display: flex;
+            justify-content: center;
+            margin-top: var(--spacing-0);
+        }
+    }
+}
