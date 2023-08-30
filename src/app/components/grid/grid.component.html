@@ -1,0 +1,24 @@
+<div *ngIf="(beers$ | async)?.length ;else other_content" class="grid">
+    <mat-grid-list
+      [cols]="gridColumns"
+      [gutterSize]="gutterSize" 
+      rowHeight="400px"
+    >
+        <mat-grid-tile
+            *ngFor="let beer of (beers$ | async)"
+            >
+              <app-custom-card
+                [title]="beer.name"
+                [subtitle]="beer.tagline"
+                [abv]="beer.abv"
+                [description]="beer.description"
+                [image]="beer.image_url"
+              />
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+<ng-template #other_content>
+  <div class="no-beers">
+    <div>There are no beers to display!</div>  
+  </div>
+</ng-template>
