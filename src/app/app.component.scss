@@ -1,0 +1,32 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.page-selector{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-0) ;
+  margin-bottom: var(--spacing-4);
+  position: fixed;
+  bottom: 0;
+
+  input {
+    width: var(--spacing-4);
+    height: var(--spacing-4);
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 20%;
+  }
+}
+
+.space-bottom {
+  margin-bottom: var(--spacing-7);
+}
